@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>*{
+    padding: 0;
+   margin: 0;
+   list-style: none;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    background: mistyrose;
+    }
+    .container{
+      width: 90%;
+      height: 80vh;
+      background: white;
+      position: relative;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+      box-shadow: 4px 3px 10px rgb(44, 42, 42)
+    }
+    .thumbnail{
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+    }
+    .thumbnail li{
+      padding: 70% 0;
+      cursor: pointer;
+      transition: .4s ease-in-out;
+    }
+    .thumbnail li img{
+      width: 50px;
+    }
+    .thumbnail li:hover{
+      transform: translate(10px);
+    }
+    .image-container {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      translate: translate(-20%, -50%)
+    }
+    .image-container img{
+      width: 150px;
+    }
+  h2{
+    margin: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2 2 4 #000;
+    animation: color 8s infinite;
+  }
+  
+  @keyframes color {
+    0% {color: black}
+    10% {color: cyan}
+    20% {color: red}
+    30% {color: green}
+    40% {color: brown}
+    50% {color: khaki}
+    60% {color: lightgray}
+    70% {color: violet}
+    80% {color: purple}
+    90% {color: maroon}
+    100% {color: hotpink}
+  }
+  button {
+    top: 25%;
+    left: 40%;
+    position: absolute;
+  }
+  audio{
+    top: 15%;
+    left: 9%;
+    position: absolute;
+    }</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday Bea!</title>
+</head>
+
+<body>
+  <h2>Happy 18th Birthday!</h2>
+  <audio controls>
+    <source src="bortdey.mp3" type="audio/mpeg">
+    </audio>
+  <button type="button" onclick="alert('HAPIBORTDEY GANDA today is your special day and I w(m)ish u a very happy happy birthday and i just want to say thank you kasi lagi mo akong pinapasaya dati hanggang ngayon naman HAHAHAGA at gusto ko lang den sabihin sayo na espesyal ka saken para alam mo HAHAHAHA, and nandito lang me palagi for you nandito ako handang sumuporta sa pagiging selena/gusion gods mo HAHAHAHAHA tsaka gusto ko lang paalala sayo na pwede kana makulong, gurang kana bea HAHAHAHAHA hi ATE dejok lang, Happy Birthday ulit Bea enjoy your day!. (nga pala pwede mo pindutin yung mga picture para mag iba iba tsaka yung parang music pindutin mo den may music yan hehe) ')"> Click Me! </button>
+  <div class="container">
+    <ul class="thumbnail">
+      <li>
+        <img src="beya.jpeg" onclick="slider('1.jpeg')"> 
+        </li>
+        <li>
+          <img src="2.jpeg" onclick="slider('bea.jpeg')">
+          </li>
+          <li>
+            <img src="astraea.jpeg" onclick="slider('3.jpeg')">
+            </li>
+    </ul>
+    <div class="image-container">
+    <img src="1.jpeg" class="beaa">
+  </div>
+  </div>
+<script>function slider(e) {
+  document.querySelector(".beaa").src = e
+}
+var Name = prompt("Anong pangalan mo sis HAHAHA?");
+
+if(Name =="" || Name == null){
+  alert ("Please enter your name.");
+  prompt ('Anong pangalan mo sis?')
+} else {
+  alert ("Hi " + Name + ", Good Morning/Good Afternoon/Good Evening basta magandang araw kung anong oras mo man to binuksan");
+}
+let age = prompt('Ilang taon kana nga ulit ngayon anteh?')
+switch (true) {
+  case age > 18:
+    alert('18 KA PALANG')
+    alert('ulitin mo ilagay mo 18😠 HAHAHAHHA')
+    break
+    case age < 18:
+      alert('Tanggapin mo na kaseng legal age kana anteh HAHAHAHA')
+      alert('ulitin mo to isagot mo 18 ka HAHAHAHAHA')
+      break
+      default:
+      alert('Nakanampucha legal age na si idol HAHAHAHAHA');
+      alert("Happy Birthday " + Name +"! enjoy your day")
+      alert('I hope your celebration gives you many happy memories')
+      alert('u r onle young once so enjoy it to the fullest. Time passes way too fast and you don’t get these years back. inshort spend your time and years with me dejok HAHAHAHAHHAHAHA.')
+}
+  </script>
